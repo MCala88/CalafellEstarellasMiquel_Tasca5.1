@@ -1,0 +1,149 @@
+/* Miquel Calafell */
+/*Le decimos la informacion por defecto del contenido dentro del body y el color de fondo de la pagina*/
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+    background: #724C9F;
+}
+
+
+/*Especificamos el espaciado del contenido con el borde de la pagina y la colocacion de elementos*/
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+}
+
+/*Especificamos el contenido que tenga que estar a la derecha de la imagen*/
+.right-column {
+	width: 35%;
+	margin: 50px;
+	margin-top: 20px;
+}
+
+
+/*En estos les decimos el formato del texto y su colocacion de los diferentes tipos de etiquetas*/
+.product span {
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.product h1 {
+	font-weight: -300;
+	font-size: 58px;
+	letter-spacing: 2px;
+}
+.product p {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/*Indica la colocación de sus elementos*/
+.product-price {
+	display: flex;
+	align-items: center;
+}
+
+/*Le indicamos el formato de el texto y su colocación*/
+.product-price span {
+	font-size: 26px;
+	font-weight: 300;
+	margin-right: 20px;
+}
+   
+/*Especificamos al boton su colocacion, la de su texto, sus formatos y colores*/
+.boton {
+	display: inline-block;
+	background-color: #7DC855;
+	text-align-last: center;
+	border-radius: 9px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 12px 10px;
+}
+
+/*Creamos el formulario de busqueda de productos con los formatos del texto, colocación y colores */
+form {
+    font-size: 25px;
+    font-family: Calibri;
+    float: left;
+    width: 20%;
+    padding: 10px;
+	color: white;
+	background-color: rgb(98, 61, 143);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+}
+
+/*Aqui redondeamos los inputs del formulario*/
+input {
+	border-radius: 11px
+}
+
+/*Creamos el menu con sus dimensiones y colocación y te crea la barra con su color*/
+nav {
+	margin: 7px auto 0;
+
+
+	position: relative;
+	width: 469px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+/*Aqui especificamos el texto */
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+/*En estos de aqui especificamos la colocación de los textos y el tamaño de los cuadrados que indica la selecciónde una opcion*/
+a:nth-child(1) {
+	width: 110px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 113px;
+}
+a:nth-child(4) {
+	width: 135px;
+}
+
+/*Con estos de aqui le decimos el color de la seleccion de la opcion usando la misma anchura que en los casos anteriores para que coincidan*/
+nav .start-home, a:nth-child(1):hover {
+	width: 110px;
+	left: 0;
+	background-color: #db1710;
+}
+nav .start-about, a:nth-child(2):hover {
+	width: 110px;
+	left: 0px;
+	background-color: #e7ff10;
+}
+nav .start-blog, a:nth-child(3):hover {
+	width: 113px;
+	left: 0px;
+	background-color: #26dd0e;
+}
+nav .start-portefolio, a:nth-child(4):hover {
+	width: 135px;
+	left: 0px;
+	background-color: #1a78e4;
+}
+

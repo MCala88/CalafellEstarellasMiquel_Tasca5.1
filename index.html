@@ -1,0 +1,116 @@
+<!--Miquel Calafell-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PIPO SPORT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bonito.css">
+    <div align="center"><img src="img/logo.png" width="300" height="320"></div>
+</head>
+<body>
+    <!--Creamos las cuatro opciones del menu-->
+    <nav>
+	<a href="producte.html">Zapatos</a>
+	<a href="producte.html">Pantalones</a>
+    <a href="producte.html">Camisetas</a>
+    <a href="producte.html">Accessorios</a>
+    </nav>
+    <!--Usamos el main porque es el contenido principal de la pagina-->
+    <!--La clase container nos sirve para crear el espaciado del contenido y su colocación-->
+    <main class="container">
+    <!--Usando el div colocamos la imagen y le decimos su tamaño-->
+        <div>
+            <div><img src="img/airmaxplus.png" width="200" height="220"></div>
+        </div>
+    <!--Con el right-column colocamos el contenido a la derecha de la imagen-->
+      <div class="right-column">  
+    <!--Con la clase product le especificamos como debe ser su contenido-->      
+        <div class="product">
+            <!--En el titulo del producto nos lleva al producte.html-->
+            <h1><a href="producte.html">Nike Air Max Plus</a></h1>
+        <!--Con la clase product-price especificamos el contenido de su interior-->
+        <div class="product-price">
+            <span>180€</span>
+            <!--Colocamos un boton que no nos lleva a ningun sitio-->
+            <a href="#" class="boton">Añadir al carro</a>
+        </div>
+    </main>
+
+    <main class="container">
+        <div>
+            <div><img src="img/Camiseta_Palma.jpg" width="200" height="220"></div>
+        </div>
+      <div class="right-column">        
+        <div class="product">
+            <h1><a href=producte.html>Palma Futsal 1r kit</a></h1>
+        <div class="product-price">
+            <span>36€</span>
+            <a href="#" class="boton">Añadir al carro</a>
+        </div>
+    </main>
+
+    <main class="container">
+        <div>
+            <div><img src="img/celtics.jpg" width="200" height="220"></div>
+        </div>
+      <div class="right-column">        
+        <div class="product">
+            <h1><a href="producte.html">1r kit Boston Celtics "Kemba Walker"</a></h1>
+        <div class="product-price">
+            <span>90€</span>
+            <a href="#" class="boton">Añadir al carro</a>
+        </div>
+    </main>
+
+    <main class="container">
+        <div>
+            <div><img src="img/pantalonesmallorca.jpg" width="200" height="220"></div>
+        </div>
+          <div class="right-column">        
+            <div class="product">
+                <h1><a href="producte.html"> Pantalones RCD Mallorca 1r equipación</a></h1>
+            <div class="product-price">
+                <span>30€</span>
+                <a href="#" class="boton">Añadir al carro</a>
+            </div>
+        </div>    
+    </main>
+
+    <div>
+            <!--Cream la hemeroteca amb un form per a que torni al mateix archiu-->
+            <!--Cream la barra de cerca i el botó de cerca-->
+            <form action="index.html">
+                <input type="text" name="cerca" placeholder=" Search...">
+                <button type="submit">Buscar</button>
+                <!--Introduim una barra de seleccio de categoria amb les que tenim-->
+                <select>
+                        <option value="Zapatos">Zapatos</option>
+                        <option value="Pantalones">Pantalones</option>
+                        <option value="Camisetas">Camisetas</option>
+                        <option value="Accessorios">Accessorios</option>
+                </select>
+                <!--Per especificar si la cerca es nomes de productes en stock o no-->
+                <select>
+                        <option value="En stock">En stock</option>
+                        <option value="Todos">Todos</option>
+                </select>
+                <!--Cream dos camps per a introduir la data de inici i finalitzacio de la cerca-->
+                <p>Precio</p>
+                <p>Desde:</p>
+                <input type="text" placeholder=" €">
+                <p>Hasta:</p>
+                <input type="text" placeholder=" €">
+            </form>
+        </div>
+        <nav>
+            <a href="producte.html">Zapatos</a>
+            <a href="producte.html">Pantalones</a>
+            <a href="producte.html">Camisetas</a>
+            <a href="producte.html">Accessorios</a>
+        </nav>
+        <!--Afegim el simbol de copyright a la derecha del final de la pagina-->
+        <footer><div align="right"><img src="img/copyright.png" width="150" height="100"></div></footer>
+</body>
+</html>
